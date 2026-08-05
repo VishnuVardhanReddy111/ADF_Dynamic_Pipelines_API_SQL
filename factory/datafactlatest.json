@@ -1,0 +1,15 @@
+{
+	"name": "datafactlatest",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1d67e4b6-02b7-4086-bc19-47d6221f0127",
+		"tenantId": "79ae19ae-f041-4743-bd77-53ea8bee67f0"
+	}
+}

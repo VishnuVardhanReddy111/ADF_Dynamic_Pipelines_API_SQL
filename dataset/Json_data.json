@@ -1,0 +1,34 @@
+{
+	"name": "Json_data",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Datalake_Linking",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "adventure.json",
+				"folderPath": "customers",
+				"fileSystem": "source"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"sink_folder": {
+					"type": "string"
+				},
+				"sink_file": {
+					"type": "string"
+				},
+				"relative_url": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
